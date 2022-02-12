@@ -1,0 +1,10 @@
+name "dbundle"
+description "bundle for D"
+authors "redthing1"
+copyright "Copyright (c) Various Authors, Copyright © 2022, redthing1"
+license "apache-2.0"
+
+targetType "library"
+lflags "-L$PACKAGE_DIR" "$PACKAGE_DIR/libbundle.a"
+dflags "-static"
+preGenerateCommands "bash $PACKAGE_DIR/build-bundle.sh"

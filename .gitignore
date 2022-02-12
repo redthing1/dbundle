@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/dbundle
+dbundle.so
+dbundle.dylib
+dbundle.dll
+dbundle.a
+dbundle.lib
+dbundle-test-*
+*.exe
+*.o
+*.obj
+*.lst
+bundle_source
+*.a
