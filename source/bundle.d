@@ -51,10 +51,8 @@ enum BUNDLE_VERSION = "2.2.0"; /* (2022/02/12) redthing1 hacking
 // size_t
 // bool
 
-enum BUNDLE_API = BUNDLE_API_EXPORT;
-
 // libraries and/or encoders 
-enum
+enum BUNDLE_LIBS : uint
 {
     BUNDLE_RAW = 0,
     BUNDLE_SHOCO = 1,
@@ -89,9 +87,9 @@ enum
 }
 
 // algorithm properties
-const char* bundle_name_of (uint q);
-const char* bundle_version_of (uint q);
-const char* bundle_ext_of (uint q);
+const (char)* bundle_name_of (uint q);
+const (char)* bundle_version_of (uint q);
+const (char)* bundle_ext_of (uint q);
 size_t bundle_unc_payload (uint q);
 size_t bundle_bound (uint q, size_t len);
 
